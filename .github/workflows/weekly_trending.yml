@@ -23,6 +23,5 @@ jobs:
 
       - name: 🚀 运行推送脚本
         env:
-          WXPUSHER_APP_TOKEN: ${{ secrets.WXPUSHER_APP_TOKEN }}
-          WXPUSHER_UID:       ${{ secrets.WXPUSHER_UID }}
+          SCKEY: ${{ secrets.SCKEY }}
         run: python github_trending_weekly.py
